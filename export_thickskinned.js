@@ -1484,8 +1484,8 @@ var obj_hover_2="onmouseover=\"this.style.backgroundColor='gold';\" onmouseout=\
 var obj_hover_3="onmouseover=\"this.style.backgroundColor='skyblue';\" onmouseout=\"this.style.backgroundColor='#E8EEEC';\"";
 
 var addscript = function() {
-if(ME.id==100214920 || ME.id==200454898 || ME.id==202628625 ||
-   ME.id==200669710) { // bb **Толстокожий** Дядя Ру GIVIK
+if(ME.id==100214920 || ME.id==2024211998 || ME.id==200454898 || ME.id==202628625 ||
+   ME.id==200669710) { // bb ФК Сахалин **Толстокожий** Дядя Ру GIVIK
 var btn_name_0="МаГудар";
 var btn_name_1="Заморозь";
 var btn_name_2="Прокля";
@@ -1775,6 +1775,10 @@ mbHP=195298;
 if(d.id==100183369) { // ***FILOSOF***
 MyClan=147;
 mbHP=14218;
+}
+if(d.id==202421199) { // ФК Сахалин
+MyClan=204;
+mbHP=690443;
 }
 var ddmbox="<form name=CrDemand style=\"padding-right:0px;padding-left:0px;padding-bottom:0px;margin:0px;padding-top:0px\">"
 +"<div onmouseover=\"pname='panel';over=true;\" onmouseout=\"over=false;\" "
@@ -2237,6 +2241,21 @@ abilityFireDust=0;
 abilityKill=0;
 abilityAbort=0;
 abilityCloneDispel=0;
+abilityPet=0;
+}
+if(ME.id==202421199) { // ФК Сахалин
+mbClon=697490;			//клон	
+mbHP=690443;    		//востановление здоровья
+mbDestroy=690442;		//Создать препятствие
+mbFireBall=690843; 		//Магический удар
+mbArmor=697491;			//Магический панцирь
+mbFreeze=693092;		//Заморозить противника
+mbPereman=814553;		//Переманить противника
+mbCurse=828547; 		//Проклясть противника
+abilityFireDust=8163477;	//Испепеление
+abilityKill=8163476;		//Убить взглядом
+abilityAbort=8211715;		//Выкинуть из боя
+abilityCloneDispel=8163478;	//Развеять клона
 abilityPet=0;
 }
 if(persIframe.guard_act==1) {
