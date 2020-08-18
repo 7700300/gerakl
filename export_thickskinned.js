@@ -1484,7 +1484,7 @@ var obj_hover_2="onmouseover=\"this.style.backgroundColor='gold';\" onmouseout=\
 var obj_hover_3="onmouseover=\"this.style.backgroundColor='skyblue';\" onmouseout=\"this.style.backgroundColor='#E8EEEC';\"";
 
 var addscript = function() {
-if(ME.id==100214920 || ME.id==2024211998 || ME.id==200454898 || ME.id==202628625 ||
+if(ME.id==100214920 || ME.id==202421199 || ME.id==200454898 || ME.id==202628625 ||
    ME.id==200669710) { // bb ФК Сахалин **Толстокожий** Дядя Ру GIVIK
 var btn_name_0="МаГудар";
 var btn_name_1="Заморозь";
