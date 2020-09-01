@@ -1758,6 +1758,7 @@ if(d.id==100214920) { // bb
 mbHP=15683;
 }
 if(d.id==200454898) { // **Толстокожий**
+MyClan=96;
 mbHP=95304;
 user_home="<a href=\"#\" onclick=\"actIframe.location='home_hid_675.html';\" "
 +"style=\"font-size:8pt;margin-left:45%;\">[Дом]</a>"
