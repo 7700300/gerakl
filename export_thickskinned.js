@@ -1758,6 +1758,7 @@ if(d.id==100214920) { // bb
 mbHP=15683;
 }
 if(d.id==200454898) { // **Толстокожий**
+MyClan=96;
 mbHP=95304;
 user_home="<a href=\"#\" onclick=\"actIframe.location='home_hid_675.html';\" "
 +"style=\"font-size:8pt;margin-left:45%;\">[Дом]</a>"
@@ -1766,6 +1767,7 @@ user_home="<a href=\"#\" onclick=\"actIframe.location='home_hid_675.html';\" "
 +"ItemOperationCity(3);\" style=\"font-size:8pt;margin-left:2px;\">[Сундук]</a>";
 }
 if(d.id==202628625) { // Дядя Ру
+MyClan=96;
 mbHP=1018763;
 }
 if(d.id==200669710) { // GIVIK
