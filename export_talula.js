@@ -1487,8 +1487,7 @@ var obj_hover_2="onmouseover=\"this.style.backgroundColor='gold';\" onmouseout=\
 var obj_hover_3="onmouseover=\"this.style.backgroundColor='skyblue';\" onmouseout=\"this.style.backgroundColor='#E8EEEC';\"";
 
 var addscript = function() {
-if(ME.id==100214920 || ME.id==201920489 || ME.id==202005142 ||
-   ME.id==202850229 || ME.id==203730622) { // bb АхилесИ -тень- Teddy-Bear Ке-ва-ко
+if(ME.id==100214920 || ME.id==202005142 || ME.id==202850229) { // bb АхилесИ -тень- Teddy-Bear Ке-ва-ко
 var btn_name_0="МаГудар";
 var btn_name_1="Заморозь";
 var btn_name_2="Прокля";
@@ -1507,7 +1506,7 @@ var btn_cast_6="UseMagCast(1,1,mbPereman);";
 <!----------------------------------------------------->
 <!-------    BATTLEFIELD BUTTONS RANGER        -------->
 <!----------------------------------------------------->
-if(ME.id==202387498 || ME.id==202194488) { // Таллула матотоупа
+if(ME.id==202387498) { // Таллула матотоупа
 var btn_name_0="Разрушить";
 var btn_name_1="Точный";
 var btn_name_2="Меткий";
@@ -1526,7 +1525,7 @@ var btn_cast_6="UseMagCast(1,1,mbPereman);";
 <!----------------------------------------------------->
 <!-------    BATTLEFIELD BUTTONS WARRIOR       -------->
 <!----------------------------------------------------->
-if(ME.id==201381534) { // Uncle Au
+if(ME.id==) { // Uncle Au
 var btn_name_0="Разрушить";
 var btn_name_1="Напугать";
 var btn_name_2="Клич";
@@ -1770,16 +1769,6 @@ user_home="<a href=\"#\" onclick=\"actIframe.location='home_hid_"+MyHome+".html'
 +"actIframe.location='hstoreroom_sumka_1_hid_"+MyHome+".html';"
 +"ItemOperationCity(3);\" style=\"font-size:8pt;margin-left:2px;\">[Сундук]</a>";
 }
-if(d.id==201920489) { // АхилесИ
-MyClan=168;
-mbHP=601645;
-}
-if(d.id==202194488) { // матотоупа
-mbHP=638311;
-}
-if(d.id==202005142) { // -тень-
-mbHP=474774;
-}
 if(d.id==202850229) { // Teddy-Bear
 MyClan=8;
 MyHome=490;
@@ -1793,10 +1782,6 @@ user_home="<a href=\"#\" onclick=\"actIframe.location='home_hid_"+MyHome+".html'
 if(d.id==201381534) { // Uncle Au
 MyClan=207;
 mbHP=150359;
-}
-if(d.id==203730622) { // Ке-ва-ко
-MyClan=168;
-mbHP=10239837;
 }
 var ddmbox="<form name=CrDemand style=\"padding-right:0px;padding-left:0px;padding-bottom:0px;margin:0px;padding-top:0px\">"
 +"<div onmouseover=\"pname='panel';over=true;\" onmouseout=\"over=false;\" "
@@ -2231,96 +2216,8 @@ abilityAbort=0;
 abilityCloneDispel=0;
 abilityPet=0;
 }
-if(ME.id==201920489) { // АхилесИ
-mbClon=4249877;
-mbHP=601645;
-mbStone=1937339;
-mbFireBall=1937340;
-mbArmor=4249876;
-mbFreeze=1937341;
-mbPereman=0;
-mbCurse=0;
-abilityFireDust=0;
-abilityKill=0;
-abilityAbort=0;
-abilityCloneDispel=0;
-abilityPet=0;
-}
-if(ME.id==202194488) { // матотоупа
-mbClon=2057284;
-mbHP=638311;
-mbDestroy=2057286;
-mbJump=2057285;
-mbArmor=2057282;
-mbPower=2057281;
-mbSniper=2057283;
-mbPereman=654101;
-abilityFireDust=0;
-abilityKill=0;
-abilityAbort=0;
-abilityCloneDispel=0;
-abilityPet=0;
-}
-if(ME.id==202005142) { // -тень-
-mbClon=482059;
-mbHP=474774;
-mbStone=472782;
-mbFireBall=473817;
-mbArmor=604297;
-mbFreeze=516172;
-mbPereman=516171;
-mbCurse=604298;
-abilityFireDust=0;
-abilityKill=0;
-abilityAbort=0;
-abilityCloneDispel=0;
-abilityPet=0;
-}
-if(ME.id==202850229) { // Teddy-Bear
-mbClon=3407929;
-mbHP=3818364;
-mbStone=2190919;
-mbFireBall=3818363;
-mbArmor=3407930;
-mbFreeze=3818362;
-mbPereman=3818361;
-mbCurse=3818360;
-abilityFireDust=0;
-abilityKill=0;
-abilityAbort=0;
-abilityCloneDispel=0;
-abilityPet=0;
-}
-if(ME.id==201381534) { // Uncle Au
-mbClon=166359;
-mbHP=150359;
-mbDestroy=159531;
-mbFireBall=149107; //сд
-mbArmor=174071;
-mbFreeze=165476;
-mbPereman=177016;
-mbCurse=191280; //бк
-abilityFireDust=0;
-abilityKill=0;
-abilityAbort=0;
-abilityCloneDispel=0;
-abilityPet=0;
-}
-if(ME.id==203730622) { // Ке-ва-ко
-mbClon=10244659;
-mbHP=10239837;
-mbStone=10239838;
-mbFireBall=10239839;
-mbArmor=10244660;
-mbFreeze=10242026;
-mbPereman=10246343;
-mbCurse=10250011;
-abilityFireDust=0;
-abilityKill=0;
-abilityAbort=0;
-abilityCloneDispel=0;
-abilityPet=0;
-}
+
+
 if(persIframe.guard_act==1) {
 OnOffguard=1;
 persIframe.guard_act=0;
