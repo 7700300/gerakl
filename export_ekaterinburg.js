@@ -1,5 +1,5 @@
 // Слабоумие и отвага
-var hostname_oil=/http:\/\/(.+)\//.exec(document.getElementsByTagName("script")[document.getElementsByTagName("script").length-1].src);
+var hostname_oil=/https:\/\/(.+)\//.exec(document.getElementsByTagName("script")[document.getElementsByTagName("script").length-1].src);
 hostname_oil=hostname_oil[1];
 
 var persIframe=top.frames[1];
@@ -26,7 +26,7 @@ try {var pAccount=top.frames[5].platinumAccount;} catch (e) {var pAccount=0;};
 var LoadImg="<img src=https://cdn.jsdelivr.net/gh/7700300/vova.github.io/img/arrow/loading.gif width=16 height=16 border=0>";
 var element_limit_hp=""
 +"<span style=\"margin-left:4px;padding-left:12px;"
-+"background:#D4D0C8 url(http://"+hostname_oil+"/img/arrow/ico_lifeup.png) no-repeat;"
++"background:#D4D0C8 url(https://"+hostname_oil+"/img/arrow/ico_lifeup.png) no-repeat;"
 +"color:#D4D0C8;border:1px solid black;\" title=\"Лимит HP\">"
 +"<span onclick=\""
 +"this.style.color='red';"
@@ -82,7 +82,7 @@ console.log('err='+encodeURIComponent(msg));
 function asAudio(name) {
 byid("as_audio").innerHTML=""
 +"<audio autoplay>"
-+"<source src=\"http://"+hostname_oil+"/audio/"+name+"\" type=\"audio/mpeg\">"
++"<source src=\"https://"+hostname_oil+"/audio/"+name+"\" type=\"audio/mpeg\">"
 +"</audio>";
 }
 
@@ -479,7 +479,7 @@ function MainSwitch(t) {
 if(t==0) {
 as_audio="";
 document.getElementById("rjob").innerHTML=""
-+"<img border=0 src=http://"+hostname_oil+"/img/arrow/checkbox.gif width=48 height=22 onclick=MainSwitch(1);>";
++"<img border=0 src=https://"+hostname_oil+"/img/arrow/checkbox.gif width=48 height=22 onclick=MainSwitch(1);>";
 }
 if(t==1) {
 as_audio=""
@@ -487,37 +487,37 @@ as_audio=""
 +"<source src=\"https://cdn.jsdelivr.net/gh/7700300/vova.github.io/audio/achtung.mp3\" type=\"audio/mpeg\">"
 +"</audio>";
 document.getElementById("rjob").innerHTML=""
-+"<img border=0 src=http://"+hostname_oil+"/img/arrow/checkbox-a.gif width=48 height=22 onclick=MainSwitch(0);>";
++"<img border=0 src=https://"+hostname_oil+"/img/arrow/checkbox-a.gif width=48 height=22 onclick=MainSwitch(0);>";
 }
 if(t==2) {
 OnOffguard=0;
 document.getElementById("rgua").innerHTML=""
-+"<img border=0 src=http://"+hostname_oil+"/img/arrow/checkbox.gif width=48 height=22 onclick=MainSwitch(3);MainSwitch(4);>";
++"<img border=0 src=https://"+hostname_oil+"/img/arrow/checkbox.gif width=48 height=22 onclick=MainSwitch(3);MainSwitch(4);>";
 }
 if(t==3) {
 OnOffguard=1;
 document.getElementById("rgua").innerHTML=""
-+"<img border=0 src=http://"+hostname_oil+"/img/arrow/checkbox-a.gif width=48 height=22 onclick=MainSwitch(2);>";
++"<img border=0 src=https://"+hostname_oil+"/img/arrow/checkbox-a.gif width=48 height=22 onclick=MainSwitch(2);>";
 }
 if(t==4) {
 OnOffbuttons=0;
 document.getElementById("rbat").innerHTML=""
-+"<img border=0 src=http://"+hostname_oil+"/img/arrow/checkbox.gif width=48 height=22 onclick=MainSwitch(5);MainSwitch(2);>";
++"<img border=0 src=https://"+hostname_oil+"/img/arrow/checkbox.gif width=48 height=22 onclick=MainSwitch(5);MainSwitch(2);>";
 }
 if(t==5) {
 OnOffbuttons=1;
 document.getElementById("rbat").innerHTML=""
-+"<img border=0 src=http://"+hostname_oil+"/img/arrow/checkbox-a.gif width=48 height=22 onclick=MainSwitch(4);>";
++"<img border=0 src=https://"+hostname_oil+"/img/arrow/checkbox-a.gif width=48 height=22 onclick=MainSwitch(4);>";
 }
 if(t==10) {
 val=byid("melt2").style.display;
 byid("melt2").style.display=(val?"":"none");
-byid("melt2down").innerHTML=(val?"<img border=0 src=http://"+hostname_oil+"/img/arrow/melt2up.gif width=24 height=22 onclick=MainSwitch(10);>":"<img border=0 src=http://"+hostname_oil+"/img/arrow/melt2down.gif width=24 height=22 onclick=MainSwitch(10);>");
+byid("melt2down").innerHTML=(val?"<img border=0 src=https://"+hostname_oil+"/img/arrow/melt2up.gif width=24 height=22 onclick=MainSwitch(10);>":"<img border=0 src=https://"+hostname_oil+"/img/arrow/melt2down.gif width=24 height=22 onclick=MainSwitch(10);>");
 }
 if(t==11) { // mytime off
 OnOffMytime=0;
 document.getElementById("mytime").innerHTML=""
-+"<img border=0 src=http://"+hostname_oil+"/img/arrow/checkbox.gif width=48 height=22 "
++"<img border=0 src=https://"+hostname_oil+"/img/arrow/checkbox.gif width=48 height=22 "
 +"onclick=\"MainSwitch(12);\" oncontextmenu=\""
 +"val=byid('myfort').style.display;"
 +"if(val=='block') {"
@@ -532,7 +532,7 @@ if(t==12) { // mytime on
 OnOffMytime=1;
 MainSwitch(16);
 document.getElementById("mytime").innerHTML=""
-+"<img border=0 src=http://"+hostname_oil+"/img/arrow/checkbox-a.gif width=48 height=22 "
++"<img border=0 src=https://"+hostname_oil+"/img/arrow/checkbox-a.gif width=48 height=22 "
 +"onclick=\"MainSwitch(11);\" oncontextmenu=\""
 +"val=byid('myfort').style.display;"
 +"if(val=='block') {"
@@ -546,7 +546,7 @@ document.getElementById("mytime").innerHTML=""
 if(t==16) { // alert-fort-off
 OnOffMyfort=0;
 document.getElementById("myfort").innerHTML=""
-+"<img border=0 src=http://"+hostname_oil+"/img/arrow/checkbox.gif width=48 height=22 "
++"<img border=0 src=https://"+hostname_oil+"/img/arrow/checkbox.gif width=48 height=22 "
 +"onclick=\"MainSwitch(17);\" oncontextmenu=\""
 +"val=byid('mytime').style.display;"
 +"if(val=='block') {"
@@ -561,7 +561,7 @@ if(t==17) { // alert-fort-on
 OnOffMyfort=1;
 MainSwitch(11);
 document.getElementById("myfort").innerHTML=""
-+"<img border=0 src=http://"+hostname_oil+"/img/arrow/checkbox-a.gif width=48 height=22 "
++"<img border=0 src=https://"+hostname_oil+"/img/arrow/checkbox-a.gif width=48 height=22 "
 +"onclick=\"MainSwitch(16);\" oncontextmenu=\""
 +"val=byid('mytime').style.display;"
 +"if(val=='block') {"
@@ -584,20 +584,20 @@ document.getElementById("melt").innerHTML=""
 +"<tr>"
 +"<td>"
 +"<span style=\"display:block;width:48;height:22;"
-+"background:url(http://"+hostname_oil+"/img/arrow/radar.gif?1) no-repeat right center;\" id=\"rjob\">"
-+"<img border=0 src=http://"+hostname_oil+"/img/arrow/checkbox.gif width=48 height=22 onclick=MainSwitch(1);>"
++"background:url(https://"+hostname_oil+"/img/arrow/radar.gif?1) no-repeat right center;\" id=\"rjob\">"
++"<img border=0 src=https://"+hostname_oil+"/img/arrow/checkbox.gif width=48 height=22 onclick=MainSwitch(1);>"
 +"</span>"
 +"</td>"
 +"<td>"
 +"<span style=\"display:block;width:48;height:22;"
-+"background:url(http://"+hostname_oil+"/img/arrow/fight.gif) no-repeat right center;\" id=\"rgua\">"
-+"<img border=0 src=http://"+hostname_oil+"/img/arrow/checkbox.gif width=48 height=22 onclick=MainSwitch(3);MainSwitch(4);>"
++"background:url(https://"+hostname_oil+"/img/arrow/fight.gif) no-repeat right center;\" id=\"rgua\">"
++"<img border=0 src=https://"+hostname_oil+"/img/arrow/checkbox.gif width=48 height=22 onclick=MainSwitch(3);MainSwitch(4);>"
 +"</span>"
 +"</td>"
 +"<td>"
 +"<span style=\"display:block;width:48;height:22;"
-+"background:url(http://"+hostname_oil+"/img/arrow/battle.gif) no-repeat right center;\" id=\"rbat\">"
-+"<img border=0 src=http://"+hostname_oil+"/img/arrow/checkbox-a.gif width=48 height=22 onclick=MainSwitch(4);>"
++"background:url(https://"+hostname_oil+"/img/arrow/battle.gif) no-repeat right center;\" id=\"rbat\">"
++"<img border=0 src=https://"+hostname_oil+"/img/arrow/checkbox-a.gif width=48 height=22 onclick=MainSwitch(4);>"
 +"</span>"
 +"</td>"
 +"<td>"
@@ -610,21 +610,21 @@ document.getElementById("melt").innerHTML=""
 +"</div>"
 +"<input name=\"act_castle\" type=\"button\" value=\"0\" "
 +"onclick=\"if(this.value==0){"
-+"this.style.background='gold url(http://apeha.ru/img/smode-3.gif) no-repeat';"
++"this.style.background='gold url(https://apeha.ru/img/smode-3.gif) no-repeat';"
 +"this.value=1;this.blur();"
 +"}else{"
 +"this.blur();"
 +"byid('auto_sys').style.borderColor='black';"
-+"this.style.background='#D4D0C8 url(http://apeha.ru/img/smode-3.gif) no-repeat';"
++"this.style.background='#D4D0C8 url(https://apeha.ru/img/smode-3.gif) no-repeat';"
 +"this.value=0;this.style.borderColor='black';};\" "
-+"style=\"width:48px;height:22px;background:url(http://apeha.ru/img/smode-3.gif) no-repeat;"
++"style=\"width:48px;height:22px;background:url(https://apeha.ru/img/smode-3.gif) no-repeat;"
 +"border:1px solid black;color:#0000FF;padding-left:24px;cursor:help\" "
 +"id=\"act_castle\" title=\"Из Замка в бой\">"
 +"</td>"
 +"<td>"
 +"<span style=\"display:block;width:24;height:22;"
-+"background:url(http://"+hostname_oil+"/img/arrow/paneling.gif) no-repeat right center;\" id=\"melt2down\">"
-+"<img border=0 src=http://"+hostname_oil+"/img/arrow/melt2down.gif width=24 height=22 onclick=MainSwitch(10);>"
++"background:url(https://"+hostname_oil+"/img/arrow/paneling.gif) no-repeat right center;\" id=\"melt2down\">"
++"<img border=0 src=https://"+hostname_oil+"/img/arrow/melt2down.gif width=24 height=22 onclick=MainSwitch(10);>"
 +"</span>"
 +"</td>"
 +"</tr>"
@@ -633,8 +633,8 @@ document.getElementById("melt").innerHTML=""
 +"<div style=\"margin-top:3px;margin-left:14px;width:10px;height:10px;"
 +"color:black;border-width:0px 0px 0px 0px;position:absolute;cursor:default;\">&#189;</div>"
 +"<span style=\"display:none;width:48px;height:22px;"
-+"background:url(http://"+hostname_oil+"/img/arrow/mytime.gif?2) no-repeat right center;\" id=\"mytime\">"
-+"<img border=0 src=http://"+hostname_oil+"/img/arrow/checkbox.gif width=48 height=22 "
++"background:url(https://"+hostname_oil+"/img/arrow/mytime.gif?2) no-repeat right center;\" id=\"mytime\">"
++"<img border=0 src=https://"+hostname_oil+"/img/arrow/checkbox.gif width=48 height=22 "
 +"onclick=\"MainSwitch(12);\" oncontextmenu=\""
 +"val=byid('myfort').style.display;"
 +"if(val=='block') {"
@@ -646,8 +646,8 @@ document.getElementById("melt").innerHTML=""
 +"return false;\">"
 +"</span>"
 +"<span style=\"display:block;width:48px;height:22px;"
-+"background:url(http://"+hostname_oil+"/img/arrow/myfort.gif) no-repeat right center;\" id=\"myfort\">"
-+"<img border=0 src=http://"+hostname_oil+"/img/arrow/checkbox.gif width=48 height=22 "
++"background:url(https://"+hostname_oil+"/img/arrow/myfort.gif) no-repeat right center;\" id=\"myfort\">"
++"<img border=0 src=https://"+hostname_oil+"/img/arrow/checkbox.gif width=48 height=22 "
 +"onclick=\"MainSwitch(17);\" oncontextmenu=\""
 +"val=byid('mytime').style.display;"
 +"if(val=='block') {"
@@ -664,13 +664,13 @@ document.getElementById("melt").innerHTML=""
 +"style=\"margin-top:4px;margin-left:4px;width:18px;height:15px;font-size:8pt;"
 +"background-color:#D4D0C8;border:1px solid black;position:absolute;\">"
 +"<div style=\"width:48px;height:22px;"
-+"background:url(http://"+hostname_oil+"/img/arrow/fight.gif) no-repeat;\" title=\"Лимит раундов\">"
++"background:url(https://"+hostname_oil+"/img/arrow/fight.gif) no-repeat;\" title=\"Лимит раундов\">"
 +"</div>"
 +"</td>"
 +"<td>"
 +"<div onclick=\"document.CrDemand.clonsum.click();\" "
 +"style=\"margin-top:2px;margin-left:0px;width:15px;height:12px;"
-+"background:url(http://"+hostname_oil+"/img/arrow/ico_unis.png) no-repeat;"
++"background:url(https://"+hostname_oil+"/img/arrow/ico_unis.png) no-repeat;"
 +"border-width:0px 0px 0px 0px;position:absolute;\" title=\"Лимит врагов\"></div>"
 +"<div onclick=\"document.CrDemand.abHP.click();\" "
 +"oncontextmenu=\"byid('t').innerHTML=element_limit_hp;"
@@ -678,7 +678,7 @@ document.getElementById("melt").innerHTML=""
 +"if(ab_limit_hp==4){byid('limitHP25').style.color='red';}"
 +"return false;\" "
 +"style=\"margin-top:2px;margin-left:18px;width:15px;height:12px;"
-+"background:url(http://"+hostname_oil+"/img/arrow/ico_lifeup.png) no-repeat;"
++"background:url(https://"+hostname_oil+"/img/arrow/ico_lifeup.png) no-repeat;"
 +"border-width:0px 0px 0px 0px;position:absolute;\" title=\"Лимит HP\"></div>"
 +"<input name=\"clonsum\" type=\"button\" value=1 onclick=\""
 +"if(this.value==0){"
@@ -710,7 +710,7 @@ document.getElementById("melt").innerHTML=""
 +"<td>"
 +"<div onclick=\"document.CrDemand.abMoveСlick.click();\" "
 +"style=\"margin-top:1px;margin-left:1px;width:12px;height:13px;"
-+"background:url(http://"+hostname_oil+"/img/arrow/ico_move_to.png) no-repeat;"
++"background:url(https://"+hostname_oil+"/img/arrow/ico_move_to.png) no-repeat;"
 +"border-width:0px 0px 0px 0px;position:absolute;\" title=\"Ходить в один клик\"></div>"
 +"<input name=\"abMoveСlick\" type=\"button\" value=0 onclick=\""
 +"if(this.value==0){"
@@ -1157,7 +1157,7 @@ tl_sec=parseInt(cutime[2],10);
 function abAudio(name) {
 byid("audio").innerHTML=""
 +"<audio autoplay>"
-+"<source src=\"http://"+hostname_oil+"/audio/"+name+"\" type=\"audio/mpeg\">"
++"<source src=\"https://"+hostname_oil+"/audio/"+name+"\" type=\"audio/mpeg\">"
 +"</audio>";
 }
 
@@ -1547,7 +1547,7 @@ document.getElementById("buttons").style.width="420px";
 document.getElementById("buttons").innerHTML=""
 +"<span id=\"areahit\" style=\"visibility:hidden;\"></span>"
 +"<audio autoplay>"
-+"<source src=\"http://"+hostname_oil+"/audio/jungle4.mp3\" type=\"audio/mpeg\">"
++"<source src=\"https://"+hostname_oil+"/audio/jungle4.mp3\" type=\"audio/mpeg\">"
 +"</audio>"
 +"<div style=\"margin-left:1px;margin-top:0px;width:65px;height:15px;font-size:11px;font-weight:bold;text-align:center;"
 +"color:black;background-color:#FFEEC0;border:solid 1px black;padding-top:1px;cursor:pointer;position:absolute;\" "
@@ -2021,11 +2021,11 @@ var minmp=Math.ceil(xmp[2]/100*85)+1;
 if(xhp[1]>=minhp) {demand+=1;}
 if(xmp[1]>=minmp) {demand+=1;}
 if(!xhl.test(e3) || d.lvl<8) {demand+=1;}
-if(demand==0) {byid("act_castle").style.background="white url(http://apeha.ru/img/smode-3.gif) no-repeat";}
-if(demand==1) {byid("act_castle").style.background="white url(http://apeha.ru/img/smode-3.gif) no-repeat";}
-if(demand==2) {byid("act_castle").style.background="gold url(http://apeha.ru/img/smode-3.gif) no-repeat";}
+if(demand==0) {byid("act_castle").style.background="white url(https://apeha.ru/img/smode-3.gif) no-repeat";}
+if(demand==1) {byid("act_castle").style.background="white url(https://apeha.ru/img/smode-3.gif) no-repeat";}
+if(demand==2) {byid("act_castle").style.background="gold url(https://apeha.ru/img/smode-3.gif) no-repeat";}
 if(demand==3) { // active-demand
-byid("act_castle").style.background="skyblue url(http://apeha.ru/img/smode-3.gif) no-repeat";
+byid("act_castle").style.background="skyblue url(https://apeha.ru/img/smode-3.gif) no-repeat";
 if(y==99 && document.CrDemand.act_castle.value==1) { // move-demand
 if(LocSite("name","INPUT","Battle{vall}") && nform!=0) {
 // msg-log
@@ -2077,7 +2077,7 @@ document.CrDemand.act_castle.click();
 setTimeout("byid('t').innerHTML='РАЗОРУЖЕН';",14000);
 byid("t").innerHTML="РАЗОРУЖЕН"
 +"<audio autoplay loop>"
-+"<source src=\"http://"+hostname_oil+"/audio/pling.mp3\" type=\"audio/mpeg\">"
++"<source src=\"https://"+hostname_oil+"/audio/pling.mp3\" type=\"audio/mpeg\">"
 +"</audio>";
 }} // end-hand-off
 if(OnOffMytime==1) { // Сигнал mytime
@@ -2167,7 +2167,7 @@ actIframe.document.getElementById("control_msg").innerHTML=control_text;
 }
 } // end-log-back
 if(document.CrDemand.act_castle.value==0) { // look-castle
-byid("act_castle").style.background="#D4D0C8 url(http://apeha.ru/img/smode-3.gif) no-repeat";
+byid("act_castle").style.background="#D4D0C8 url(https://apeha.ru/img/smode-3.gif) no-repeat";
 } // end-look-castle
 demand=0;
 setTimeout(addObs,10000);
