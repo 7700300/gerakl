@@ -1761,8 +1761,8 @@ if(d.id==100214920) { // bb
 mbHP=15683;
 }
 if(d.id==202049324) { // Екатеринбург
-MyClan=933;
-MyHome=96;
+MyClan=96;
+MyHome=933;
 mbHP=514273;
 user_home="<a href=\"#\" onclick=\"actIframe.location='home_hid_"+MyHome+".html';\" "
 +"style=\"color:green;font-size:8pt;margin-left:45%;\">[Дом]</a>"
