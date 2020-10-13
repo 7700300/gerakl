@@ -1767,6 +1767,7 @@ user_home="<a href=\"#\" onclick=\"actIframe.location='home_hid_675.html';\" "
 +"ItemOperationCity(3);\" style=\"font-size:8pt;margin-left:2px;\">[Сундук]</a>";
 }
 if(d.id==202628625) { // Дядя Ру
+MyClan=96;
 mbHP=1018763;
 }
 if(d.id==200669710) { // GIVIK
