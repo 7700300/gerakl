@@ -1,5 +1,5 @@
-var persIframe=top.frames[0];
-var actIframe=top.frames[1];
+var persIframe=top.frames[1];
+var actIframe=top.frames[2];
 
 var hostname_oil="7700300.github.io/vova.github.io/";
 var LoadImg="<img src=\"https://"+hostname_oil+"/img/arrow/loading.gif\" width=16 height=16 border=0>";
