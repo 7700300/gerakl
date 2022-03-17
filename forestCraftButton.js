@@ -1,5 +1,5 @@
-var persIframe=top.frames[1];
-var actIframe=top.frames[2];
+var persIframe=top.frames[0];
+var actIframe=top.frames[1];
 
 var hostname_oil="7700300.github.io/vova.github.io/";
 var LoadImg="<img src=\"https://"+hostname_oil+"/img/arrow/loading.gif\" width=16 height=16 border=0>";
@@ -2364,19 +2364,10 @@ AddElement("span","audio_ff");
 AddElement("span","audio_rr");
 
 if(!persIframe.document.getElementById("herbal14")) {
-//persIframe.document.getElementById("IMG_pers").style.overflow="hidden";
-//persIframe.document.getElementById("IMG_pers").style.height="165px";
-//persIframe.document.getElementById("IMG_pers").style.width="165px";
-//persIframe.document.getElementById("IMG_pers").innerHTML=""
-//+"<span id=herbal14></span><br>"
-//+"<span id=herbal15></span><br>"
-//+"<span id=herbal16></span><br>"
-//+"<span id=herbal19></span><br>"
-//+"<span id=herbal20></span>";
-paret.document.getElementById("IMG_pers").style.overflow="hidden";
-paret.document.getElementById("IMG_pers").style.height="165px";
-paret.document.getElementById("IMG_pers").style.width="165px";
-paret.document.getElementById("IMG_pers").innerHTML=""
+persIframe.document.getElementById("IMG_pers").style.overflow="hidden";
+persIframe.document.getElementById("IMG_pers").style.height="165px";
+persIframe.document.getElementById("IMG_pers").style.width="165px";
+persIframe.document.getElementById("IMG_pers").innerHTML=""
 +"<span id=herbal14></span><br>"
 +"<span id=herbal15></span><br>"
 +"<span id=herbal16></span><br>"
