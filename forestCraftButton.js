@@ -2364,10 +2364,19 @@ AddElement("span","audio_ff");
 AddElement("span","audio_rr");
 
 if(!persIframe.document.getElementById("herbal14")) {
-persIframe.document.getElementById("IMG_pers").style.overflow="hidden";
-persIframe.document.getElementById("IMG_pers").style.height="165px";
-persIframe.document.getElementById("IMG_pers").style.width="165px";
-persIframe.document.getElementById("IMG_pers").innerHTML=""
+//persIframe.document.getElementById("IMG_pers").style.overflow="hidden";
+//persIframe.document.getElementById("IMG_pers").style.height="165px";
+//persIframe.document.getElementById("IMG_pers").style.width="165px";
+//persIframe.document.getElementById("IMG_pers").innerHTML=""
+//+"<span id=herbal14></span><br>"
+//+"<span id=herbal15></span><br>"
+//+"<span id=herbal16></span><br>"
+//+"<span id=herbal19></span><br>"
+//+"<span id=herbal20></span>";
+paret.document.getElementById("IMG_pers").style.overflow="hidden";
+paret.document.getElementById("IMG_pers").style.height="165px";
+paret.document.getElementById("IMG_pers").style.width="165px";
+paret.document.getElementById("IMG_pers").innerHTML=""
 +"<span id=herbal14></span><br>"
 +"<span id=herbal15></span><br>"
 +"<span id=herbal16></span><br>"
