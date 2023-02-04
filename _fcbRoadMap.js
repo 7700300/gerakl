@@ -85,6 +85,6 @@ document.MyCraft.convertText.value=RoadMap[a];
 }
 
 document.getElementById("road_map").innerHTML=""
-+"<img border=0 src=http://"+hostname_oil+"/img/arrow/ico_file_b.gif width=17 height=14 style=\"cursor:pointer;\" "
++"<img border=0 src=https://"+hostname_oil+"/img/arrow/ico_file_b.gif width=17 height=14 style=\"cursor:pointer;\" "
 +"onmouseover=\"ShowHint(road_map)\" onmouseout=\"HideHint()\">";
 document.getElementById("road_map").style.background="url(img/d.gif) no-repeat white";
