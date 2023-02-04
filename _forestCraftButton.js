@@ -1,7 +1,7 @@
 var persIframe=top.frames[1];
 var actIframe=top.frames[2];
 
-var hostname_oil="https://cdn.jsdelivr.net/gh/7700300/vova.github.io/";
+var hostname_oil="cdn.jsdelivr.net/gh/7700300/andre/";
 var LoadImg="<img src=\"https://"+hostname_oil+"/img/arrow/loading.gif\" width=16 height=16 border=0>";
 var RTitle="";
 var SMove=localStorage.getItem("MoveStory");
