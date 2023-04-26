@@ -26,7 +26,8 @@ var mypers={
 21:{nk:"-Голодный Скелет-"},
 22:{nk:"Палко"},
 23:{nk:"Triplex"},
-24:{nk:"~Фалкон~"}
+24:{nk:"~Фалкон~"},
+25:{nk:"~ZabaN~"}
 };
 var nform=document.forms.length-1;
 var melvl=document.getElementsByTagName("select")["lvl"].selectedIndex;
@@ -123,7 +124,7 @@ if(melvl==12) persIframe.CreateDemand(0,9,12,10);
 if(melvl==13) persIframe.CreateDemand(0,11,maxlvl[rnd],maxp[rnd]);
 if(melvl==14) persIframe.CreateDemand(0,11,maxlvl[rnd],maxp[rnd]);
 if(melvl==15) persIframe.CreateDemand(0,11,23,maxp[rnd]);
-if(melvl==16) persIframe.CreateDemand(0,13,23,10);
+if(melvl==16) persIframe.CreateDemand(0,13,23,maxp[rnd]);
 if(melvl==17) persIframe.CreateDemand(0,13,23,10);
 if(melvl==18) persIframe.CreateDemand(0,13,23,10);
 if(melvl==19) persIframe.CreateDemand(0,13,23,10);
